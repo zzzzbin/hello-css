@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Modal</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #555;
+      }
+      .modal {
+        height: 80vh;
+        width: 900px;
+        max-width: 80%;
+
+        background-color: white;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+      }
+      .header {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 1rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid #777;
+      }
+      .title {
+        font-size: 1.5rem;
+        padding-top: 1rem;
+      }
+      .close-button {
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin: 0;
+        padding: 0;
+        cursor: pointer;
+        background: none;
+        align-self: flex-start;
+        padding-top: 0.5rem;
+      }
+      .body {
+        overflow: auto;
+        flex-grow: 1;
+        padding: 1rem;
+      }
+      .footer {
+        display: flex;
+        justify-content: flex-end;
+        padding: 0.5rem;
+        border-top: 1px solid #777;
+      }
+      .footer .btn {
+        margin-right: 0.5rem;
+      }
+      .footer .btn:last-child {
+        margin-right: inherit;
+      }
+      .btn {
+        padding: 0.5em 1em;
+        font-size: inherit;
+        border-radius: 0.3em;
+        border: none;
+        color: white;
+        cursor: pointer;
+      }
+      .btn.btn-primary {
+        background-color: #1ca;
+      }
+      .btn.btn-primary:hover,
+      .btn.btn-primary:focus {
+        background-color: #0a8;
+      }
+      .btn.btn-danger {
+        background-color: #c33;
+      }
+      .btn.btn-danger:hover,
+      .btn.btn-danger:focus {
+        background-color: #a11;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="modal">
+      <div class="header">
+        <span class="title">Title</span>
+        <button class="close-button">&times;</button>
+      </div>
+      <div class="body">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium
+        consectetur fuga quis iusto sint accusamus veniam nulla aspernatur
+        sapiente eos facere debitis ullam natus maiores et libero culpa rem non
+        nesciunt incidunt, aliquam suscipit assumenda nam. Nobis, dolore
+        ratione, beatae quasi nisi voluptatibus ad commodi ex repellat id
+        minima? Harum consequatur eum numquam. Vel ratione, distinctio deleniti
+        sunt sed non est! Id labore eaque hic nulla autem nostrum, at error odit
+        cum saepe assumenda iusto aut aspernatur maiores aliquam ipsum unde
+        earum deleniti suscipit placeat inventore, consectetur praesentium quasi
+        doloremque. Saepe numquam deserunt soluta. Sapiente eius voluptatibus,
+        ad eos totam nesciunt porro, a beatae aperiam voluptate, nulla delectus
+        ut quaerat at ea? Natus, officia impedit. Dolorem, nam sequi error
+        perferendis nemo iure. Repellat assumenda ipsam iusto laudantium. Fugit
+        totam ipsum tenetur error tempora veritatis neque, aut optio praesentium
+        eligendi ab esse id quisquam magnam quia provident atque amet, impedit
+        obcaecati? Adipisci magni doloremque neque soluta ad vitae, at corporis
+        blanditiis architecto, facilis beatae laboriosam totam, expedita autem
+        dolorem molestiae explicabo dolore voluptatum accusamus fugit nobis
+        reiciendis voluptate. Nostrum dolores magnam, nesciunt veritatis commodi
+        in? Veritatis eaque, iste quaerat vitae fugit neque eius beatae,
+        expedita sunt corporis dolores ducimus similique! Sapiente. Lorem, ipsum
+        dolor sit amet consectetur adipisicing elit. Animi quo similique ad
+        libero qui consequatur commodi provident mollitia doloribus voluptates.
+        Iure deleniti dolor cum quod ratione dignissimos et molestias? Iusto
+        dolorem voluptatem molestias magnam maxime reiciendis eum aliquid
+        obcaecati provident tempora rem, veniam error asperiores quas sapiente
+        est! Unde blanditiis debitis consequuntur illum repudiandae nulla
+        ratione ad nobis omnis sequi maxime minus atque quos dolorem id sint,
+        tempora enim? Enim adipisci itaque amet maiores distinctio, similique
+        beatae quod, molestiae illum assumenda iusto dolorum quia? Id doloribus
+        quis delectus distinctio asperiores, iusto, adipisci cumque officiis
+        autem, molestias accusantium magni harum ipsam.
+      </div>
+      <div class="footer">
+        <button class="btn btn-primary">ok</button>
+        <button class="btn btn-danger">cancel</button>
+      </div>
+    </div>
+  </body>
+</html>
